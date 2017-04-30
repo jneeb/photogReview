@@ -1,0 +1,266 @@
+.desktopNav
+	display: none
+
+.tabletNav
+	display: none
+
+
+// mobile phone styling
+.mobileNav
+	height: 60px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	position: fixed
+	width: 100%
+
+	#mobileSlider
+		transition: all 0.3s ease
+		transform: translateY(-100%)
+		position: absolute
+
+		&.isOpen
+			transform: translateY(0)
+
+	.mobileLogo
+		margin-left: 15px
+
+		span
+			height: 50px
+			width: 50px
+			background: pink
+			display: block
+			border-radius: 50%
+
+	#burger
+		height: 50px
+		width: 30px
+		display: flex
+		margin-right: 15px
+		justify-content: center
+		align-items: center
+
+		span,
+		span:before,
+		span:after
+			content: ""
+			position: relative
+			transition: all 0.3s ease
+			width: 30px
+			height: 3px
+			background: black
+			display: block
+
+		span:before
+			top: 10px
+
+		span:after
+			top: -13px
+
+		&.isOpen span
+			background: transparent
+
+		&.isOpen span:before,
+		&.isOpen span:after
+			transform-origin: center
+			transform: rotate(45deg)
+			top: 0
+
+		&.isOpen span:after
+			transform: rotate(-45deg)
+			top: -3px
+
+// landscape phone styling
+@media (orientation: landscape)
+	.mobileNav
+		display: none
+
+	.tabletNav
+		height: 60px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: fixed
+		width: 100%
+
+		.tabletLogo
+
+			span
+				display: block
+				background: pink
+				height: 50px
+				width: 50px
+				border-radius: 50%
+
+		.tabletLinks
+
+			ul
+
+				li
+					display: inline-block
+					text-align: center
+
+					a
+
+					i
+
+			#tabletDropDown
+				display: none // FIXME: format drop down
+				position: absolute
+				right: 0
+
+				&.onClick
+					display: block
+
+					ul
+
+						li
+							display: block
+							text-align: right
+
+							a
+
+								i
+
+// tablet styling
+@media (min-width: 768px)
+	.mobileNav
+		display: none
+
+	.tabletNav
+		height: 80px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: fixed
+		width: 100%
+
+		.tabletLogo
+
+			span
+				display: block
+				background: pink
+				height: 50px
+				width: 50px
+				border-radius: 50%
+
+		.tabletLinks
+
+			ul
+
+				li
+					display: inline-block
+					text-align: center
+
+					a
+
+					i
+
+			#tabletDropDown
+				display: none // FIXME: format drop down
+				position: absolute
+				right: 0
+
+				&.onClick
+					display: block
+
+					ul
+
+						li
+							display: block
+							text-align: right
+
+							a
+
+								i
+
+//tablet landscape styling
+@media (min-width: 768px) and (orientation: landscape)
+	.tabletNav
+
+		.tabletLogo
+
+		.tabletLinks
+
+			ul
+
+				li
+
+					a
+
+
+			.tabletDropDown
+
+				ul
+
+					li
+
+						a
+
+//laptop or desktop styling
+@media (min-width: 1025px)
+	.mobileNav
+		display: none
+
+	.tabletNav
+		display: none
+
+	.desktopNav
+		display: block
+		position: fixed
+		width: 100%
+
+		.logo
+			position: absolute
+			left: 20px
+			height: 100px
+			display: flex
+			align-items: center
+
+			span
+				height: 80px
+				width: 80px
+				display: block
+				background: pink
+				border-radius: 50%
+				cursor: pointer
+
+		.desktopLinks
+			position: absolute
+			left: 140px
+			height: 100px
+			display: flex
+			align-items: center
+
+			ul
+
+				li
+					display: inline-block
+
+					a
+						padding: 0 10px
+						transition: all 0.2s ease-in-out
+						cursor: pointer
+
+						&:hover
+							color: gold
+
+		.socialLinks
+			position: absolute
+			right: 20px
+			height: 100px
+			display: flex
+			align-items: center
+
+			.searchBar
+
+			.mediaLinks
+
+				a
+					padding: 0 10px
+					transition: all 0.2s ease-in-out
+					cursor: pointer
+
+					&:hover
+						color: gold
