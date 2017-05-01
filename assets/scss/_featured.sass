@@ -1,4 +1,5 @@
 #featured
+	padding-top: 80px
 
 	h2
 		text-align: center
@@ -10,9 +11,67 @@
 		flex-direction: column
 
 		span
-			height: 300px
-			width: 300px
+			height: 200px
+			width: 200px
 			display: block
 			background: pink
 			box-sizing: border-box
 			margin: 20px
+
+// tablet styling
+@media (min-width: 768px)
+	#featured
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+		h2
+			margin-bottom: 30px
+
+		.featureWrap
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 700px
+			height: 440px
+			flex-wrap: wrap
+			justify-content: space-between
+
+			span:nth-child(1)
+				height: 400px
+				width: 400px
+
+			span:nth-child(2),
+			span:nth-child(3)
+				height: 175px
+				width: 175px
+
+// landscape tablet styling
+@media (min-width: 768px) and (orientation: landscape)
+	#featured
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+
+		h2
+			margin-bottom: 30px
+
+		.featureWrap
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 800px
+			height: 500px
+			flex-wrap: wrap
+			justify-content: space-between
+
+			span:nth-child(1)
+				height: 500px
+				width: 500px
+
+			span:nth-child(2),
+			span:nth-child(3)
+				height: 200px
+				width: 200px

@@ -17,8 +17,9 @@
 
 	#mobileSlider
 		transition: all 0.3s ease
-		transform: translateY(-100%)
+		transform: translateY(-150%)
 		position: absolute
+		top: 60px
 
 		&.isOpen
 			transform: translateY(0)
@@ -177,26 +178,70 @@
 
 //tablet landscape styling
 @media (min-width: 768px) and (orientation: landscape)
+	.mobileNav
+		display: none
+
 	.tabletNav
+		display: none
 
-		.tabletLogo
+	.desktopNav
+		display: block
+		position: fixed
+		width: 100%
 
-		.tabletLinks
+		.logo
+			position: absolute
+			left: 20px
+			height: 100px
+			display: flex
+			align-items: center
+
+			span
+				height: 80px
+				width: 80px
+				display: block
+				background: pink
+				border-radius: 50%
+				cursor: pointer
+
+		.desktopLinks
+			position: absolute
+			left: 140px
+			height: 100px
+			display: flex
+			align-items: center
 
 			ul
 
 				li
+					display: inline-block
 
 					a
+						padding: 0 10px
+						transition: all 0.2s ease-in-out
+						cursor: pointer
 
+						&:hover
+							color: gold
 
-			.tabletDropDown
+		.socialLinks
+			position: absolute
+			right: 20px
+			height: 100px
+			display: flex
+			align-items: center
 
-				ul
+			.searchBar
 
-					li
+			.mediaLinks
 
-						a
+				a
+					padding: 0 10px
+					transition: all 0.2s ease-in-out
+					cursor: pointer
+
+					&:hover
+						color: gold
 
 //laptop or desktop styling
 @media (min-width: 1025px)
