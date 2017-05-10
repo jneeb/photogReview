@@ -1,36 +1,75 @@
-// .articleWrap
-// 	padding: 50px 10px 0 10px
-// 	display: flex
-// 	justify-content: center
-// 	align-items: center
-// 	flex-direction: column
-//
-// 	.row
-// 		display: flex
-// 		flex-direction: row
-// 		margin-top: 30px
-// 		cursor: pointer
-//
-// 		&:hover
-//
-// 			span
-// 				opacity: 0.8
-//
-// 			.col-1
-//
-// 				h3, p
-// 					text-decoration: underline black
-//
-// 		span
-// 			height: 100px
-// 			min-width: 100px
-// 			display: block
-// 			background: pink
-//
-// 		.col-1
-// 			flex-grow: 2
-// 			margin-left: 10px
-//
-// 			h3
-//
-// 			p
+.review
+	padding-top: 60px
+	padding: 60px 10px 10px 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+	.articleTitle
+		box-sizing: border-box
+		padding: 10px
+		width: 100%
+		max-width: 600px
+
+		h1
+
+		p
+
+
+	.articleWrap
+		padding: 10px
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+
+		.articleImg
+			max-width: 600px
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+
+			img
+				box-sizing: border-box
+				width: 100%
+				height: auto
+
+			figcaption
+				width: 100%
+
+		p
+			padding: 10px 0
+			max-width: 600px
+
+#gearLink
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+
+	h3
+
+	.gearWrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+
+		.gearCol
+			margin: 10px
+
+			img
+				display: block
+				background: pink
+				width: 250px
+
+			p
+				text-align: center
+
+			button
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
