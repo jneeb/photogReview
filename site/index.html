@@ -2,27 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Tog | Camera Review</title>
+		<title>Camera Reviews | TOG</title>
 		<link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<header>
 			<div class="desktopNav">
 				<div class="logo">
-					<span></span>
+					<a href="/"><span></span></a>
 				</div>
 				<div class="desktopLinks">
 					<ul>
-						<li><a href="#">NEWS</a></li>
-						<li><a href="#">REVIEWS</a></li>
-						<li><a href="#">ARTICLES</a></li>
-						<li><a href="#">BUYING GUIDE</a></li>
-						<li><a href="#">CAMERAS</a></li>
-						<li><a href="#">LENSES</a></li>
+						<li><a href="/news/">NEWS</a></li>
+						<li><a href="/reviews/">REVIEWS</a></li>
+						<li><a href="/articles/">ARTICLES</a></li>
+						<li><a href="/buyingGuide/">BUYING GUIDE</a></li>
+						<li><a href="/cameras/">CAMERAS</a></li>
+						<li><a href="/lenses/">LENSES</a></li>
 					</ul>
 				</div>
 				<div class="socialLinks">
@@ -39,20 +37,20 @@
 
 			<div class="tabletNav">
 				<div class="tabletLogo">
-					<span></span>
+					<a href="/"><span></span></a>
 				</div>
 				<div class="tabletLinks">
 					<ul>
-						<li><a href="#">REVIEWS</a></li>
-						<li><a href="#">BUYING GUIDE</a></li>
+						<li><a href="/reviews/">REVIEWS</a></li>
+						<li><a href="/buyingGuide/">BUYING GUIDE</a></li>
 						<li class="dropDown">MORE<i class="fa fa-sort-desc" aria-hidden="true"></i></li>
 					</ul>
-					<div id="tabletDropDown" class="onClick">
+					<div id="tabletDropDown">
 						<ul>
-							<li><a href="#">NEWS</a></li>
-							<li><a href="#">ARTICLES</a></li>
-							<li><a href="#">CAMERAS</a></li>
-							<li><a href="#">LENSES</a></li>
+							<li><a href="/news/">NEWS</a></li>
+							<li><a href="/articles/">ARTICLES</a></li>
+							<li><a href="/cameras/">CAMERAS</a></li>
+							<li><a href="/lenses">LENSES</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,12 +59,12 @@
 			<div class="mobileNav">
 				<div id="mobileSlider">
 					<ul>
-						<li><a href="">NEWS</a></li>
-						<li><a href="">REVIEWS</a></li>
-						<li><a href="">ARTICLES</a></li>
-						<li><a href="">BUYING GUIDE</a></li>
-						<li><a href="">CAMERAS</a></li>
-						<li><a href="">LENSES</a></li>
+						<li><a href="/news/">NEWS</a></li>
+						<li><a href="/reviews/">REVIEWS</a></li>
+						<li><a href="/articles/">ARTICLES</a></li>
+						<li><a href="/buyingGuide/">BUYING GUIDE</a></li>
+						<li><a href="/cameras/">CAMERAS</a></li>
+						<li><a href="/lenses">LENSES</a></li>
 					</ul>
 					<div class="mobileSocialLinks">
 						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -75,7 +73,7 @@
 					</div>
 				</div>
 				<div class="mobileLogo">
-					<span></span>
+					<a href="/"><span></span></a>
 				</div>
 				<div id="burger">
 					<span></span>
@@ -84,7 +82,11 @@
 		</header>
 
 		<section id="hero">
-			<h1>Sony A9</h1>
+			<div class="heroWrap">
+				<h1>New Release: Sony Alpha a9</h1>
+				<button type="button" name="button" href="#">Read More</button>
+			</div>
+			<a class="scrollArrow" href="#featured"><span></span></a>
 		</section>
 
 		<section id="featured">
@@ -143,7 +145,9 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</body>
-	<script type="text/javascript" src="/functions/burger.js">
-	</script>
+	<script type="text/javascript" src="/functions/burger.js"></script>
+	<script type="text/javascript" src="/functions/dropDown.js"></script>
+	<script type="text/javascript" src="/functions/smoothScroll.js"></script>
 </html>
