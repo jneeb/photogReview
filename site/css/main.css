@@ -6,6 +6,10 @@ body {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: black; }
+
 li {
   list-style: none; }
 
@@ -736,26 +740,84 @@ h6 {
       width: 50%; }
 
 #productGrid {
-  padding-top: 60px; }
-  #productGrid .gridWrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    #productGrid .gridWrap .gridRow {
-      max-width: 200px; }
-      #productGrid .gridWrap .gridRow .rowItem {
-        padding-bottom: 10px; }
-        #productGrid .gridWrap .gridRow .rowItem img {
-          width: 200px;
-          box-sizing: border-box;
-          max-width: 200px; }
+  padding: 60px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #productGrid h1 {
+    max-width: 890px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px; }
+  #productGrid .sortMenu {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px; }
+    #productGrid .sortMenu ul li {
+      display: inline-block; }
+  #productGrid h2 {
+    max-width: 890px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px; }
+  #productGrid .gridRow {
+    box-sizing: border-box;
+    padding: 10px; }
+    #productGrid .gridRow .rowItem {
+      width: 100%;
+      padding-bottom: 10px;
+      cursor: pointer; }
+      #productGrid .gridRow .rowItem:hover img {
+        -webkit-filter: opacity(0.8);
+                filter: opacity(0.8); }
+      #productGrid .gridRow .rowItem:hover h4, #productGrid .gridRow .rowItem:hover h3, #productGrid .gridRow .rowItem:hover p, #productGrid .gridRow .rowItem:hover a {
+        text-decoration: underline black; }
+      #productGrid .gridRow .rowItem img {
+        width: 100%;
+        box-sizing: border-box; }
+
+@media (min-width: 768px) {
+  #productGrid {
+    padding-top: 80px; }
+    #productGrid h1 {
+      padding: 0 30px; }
+    #productGrid h2 {
+      padding: 0 30px; }
+    #productGrid .sortMenu {
+      width: 890px;
+      padding: 0 30px; }
+    #productGrid .gridRow {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #productGrid .gridRow .rowItem {
+        margin: 0 20px;
+        max-width: 250px; } }
+
+@media (min-width: 768px) and (orientation: landscape) {
+  #productGrid {
+    padding-top: 100px; } }
+
+@media (min-width: 1025px) {
+  #productGrid {
+    padding-top: 100px; } }
 
 footer {
   margin-top: 50px;

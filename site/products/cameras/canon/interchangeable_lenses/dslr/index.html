@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Camera Reviews | TOG</title>
+		<title>Canon Cameras | Camera Reviews | TOG</title>
 		<link rel="stylesheet" href="/css/main.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,12 +45,12 @@
 						<li><a href="/buyingGuide/">BUYING GUIDE</a></li>
 						<li class="dropDown">MORE<i class="fa fa-sort-desc" aria-hidden="true"></i></li>
 					</ul>
-					<div id="tabletDropDown">
+					<div id="tabletDropDown" class="onClick">
 						<ul>
 							<li><a href="/news/">NEWS</a></li>
 							<li><a href="/articles/">ARTICLES</a></li>
 							<li><a href="/products/cameras/">CAMERAS</a></li>
-							<li><a href="/products/lenses">LENSES</a></li>
+							<li><a href="/products/lenses/">LENSES</a></li>
 						</ul>
 					</div>
 				</div>
@@ -64,7 +64,7 @@
 						<li><a href="/articles/">ARTICLES</a></li>
 						<li><a href="/buyingGuide/">BUYING GUIDE</a></li>
 						<li><a href="/products/cameras/">CAMERAS</a></li>
-						<li><a href="/products/lenses">LENSES</a></li>
+						<li><a href="/products/lenses/">LENSES</a></li>
 					</ul>
 					<div class="mobileSocialLinks">
 						<a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -81,47 +81,56 @@
 			</div>
 		</header>
 
-		<section id="hero">
-			<div class="heroWrap">
-				<h1>New Release: Sony Alpha a9</h1>
-				<button type="button" name="button" href="#">Read More</button>
-			</div>
-			<a class="scrollArrow" href="#featured"><span></span></a>
-		</section>
+		<section id="productGrid">
+			<h1>Canon Cameras</h1>
 
-		<section id="featured">
-			<h2>Featured</h2>
-			<div class="featureWrap">
-				<span></span>
-				<span></span>
-				<span></span>
+			<div class="sortMenu">
+				<select onChange="window.location.href=this.value">
+					<option value="/products/cameras/">All brands</option>
+					<option value="/products/cameras/canon/" selected="selected">Canon</option><
+					<option value="/products/cameras/fujifilm/">Fujifilm</option>
+					<option value="/products/cameras/leica/">Leica</option>
+					<option value="/products/cameras/nikon/">Nikon</option>
+					<option value="/products/cameras/olympus/">Olympus</option>
+					<option value="/products/cameras/panasonic/">Panasonic</option>
+					<option value="/products/cameras/pentax/">Pentax</option>
+					<option value="/products/cameras/samsung/">Samsung</option>
+					<option value="/products/cameras/sigma/">Sigma</option>
+					<option value="/products/cameras/sony/">Sony</option>
+					<option value="/products/cameras/yi/">YI</option>
+				</select>
+				<select onChange="window.location.href=this.value">
+					<option value="/products/cameras/canon/" selected="selected">Cameras</option>
+					<option value="/products/cameras/canon/interchangeable_lenses">&nbsp;&nbsp;Interchangable Lenses</option>
+					<option value="/products/cameras/canon/interchangeable_lenses/dslr/" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;DSLR</option>
+					<option value="/products/cameras/canon/interchangeable_lenses/mirrorless/">&nbsp;&nbsp;&nbsp;&nbsp;Mirrorless</option>
+					<option value="/products/cameras/canon/point_and_shoot/">&nbsp;&nbsp;Point and Shoot</option>
+					<option value="/products/lenses/canon/">Lenses</option>
+				</select>
 			</div>
-		</section>
 
-		<section id="homeArticles">
-			<h2>Articles</h2>
-			<div class="articleWrap">
-				<div class="row">
-					<span></span>
-					<div class="col-1">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			<div class="gridWrap">
+				<div class="gridRow">
+					<div class="rowItem">
+						<a href="/products/cameras/canon/interchangable_lenses/dslr/canon_eos_77d/">
+							<img src="/img/heroCamera.jpg" alt="">
+							<h3>Canon EOS 77D / EOS 9000D</h3>
+							<p>Announced Feb 15, 2017</p>
+							<h4>24 megapixels | APS-C Sensor | 3" Screen</h4>
+							<a href="#">Learn more</a>
+						</a>
+					</div>
+					<div class="rowItem">
+						<a href="/products/cameras/canon/interchangable_lenses/dslr/canon_eos_rebel_t7i/">
+							<img src="/img/heroCamera.jpg" alt="">
+							<h3>Canon EOS Rebel T7i / EOS 800D / Kiss X9i</h3>
+							<p>Announced Feb 15, 2017</p>
+							<h4>24 megapixels | APS-C Sensor | 3" Screen</h4>
+							<a href="#">Learn more</a>
+						</a>
 					</div>
 				</div>
-				<div class="row">
-					<span></span>
-					<div class="col-1">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					</div>
-				</div>
-				<div class="row">
-					<span></span>
-					<div class="col-1">
-						<h3>Lorem ipsum dolor sit amet, consectetur adipisicingf</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					</div>
-				</div>
+
 			</div>
 		</section>
 
@@ -149,5 +158,4 @@
 	</body>
 	<script type="text/javascript" src="/functions/burger.js"></script>
 	<script type="text/javascript" src="/functions/dropDown.js"></script>
-	<script type="text/javascript" src="/functions/smoothScroll.js"></script>
 </html>

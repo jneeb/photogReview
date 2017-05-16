@@ -1,24 +1,104 @@
 #productGrid
-	padding-top: 60px
+	padding: 60px 10px 10px 10px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
 
-	.gridWrap
-		display: flex
-		flex-direction: column
-		align-items: center
+	h1
+		max-width: 890px
+		width: 100%
+		box-sizing: border-box
+		padding: 0 10px
 
-		.gridRow
-			max-width: 200px
+	.sortMenu
+		box-sizing: border-box
+		width: 100%
+		padding: 0 10px
 
-			.rowItem
-				padding-bottom: 10px
+		ul
+
+			li
+				display: inline-block
+
+	h2
+		max-width: 890px
+		width: 100%
+		box-sizing: border-box
+		padding: 0 10px
+
+	.gridRow
+		box-sizing: border-box
+		padding: 10px
+
+		.rowItem
+			width: 100%
+			padding-bottom: 10px
+			cursor: pointer
+
+			&:hover
 
 				img
-					width: 200px
-					box-sizing: border-box
-					max-width: 200px
+					filter: opacity(0.8)
+
+				h4, h3, p, a
+					text-decoration: underline black
+
+
+			img
+				width: 100%
+				box-sizing: border-box
+
+			h4
+
+			h3
+
+			p
+
+			a
+
+// landscape phone styling
+@media (orientation: landscape)
+	#productGrid
+
+// tablet styling
+@media (min-width: 768px)
+	#productGrid
+		padding-top: 80px
+
+		h1
+			padding: 0 30px
+
+		h2
+			padding: 0 30px
+
+		.sortMenu
+			width: 890px
+			padding: 0 30px
+
+		.gridRow
+			display: flex
+			flex-direction: row
+			justify-content: center
+
+			.rowItem
+				margin: 0 20px
+				max-width: 250px
+
+				img
 
 				h3
 
 				p
 
 				a
+
+//tablet landscape styling
+@media (min-width: 768px) and (orientation: landscape)
+	#productGrid
+		padding-top: 100px
+
+//laptop or desktop styling
+@media (min-width: 1025px)
+	#productGrid
+		padding-top: 100px
